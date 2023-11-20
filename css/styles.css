@@ -1,0 +1,203 @@
+/* Formato header */
+header{
+    display: block;
+    position:sticky;
+    margin-top: 0%;
+
+}
+h1{
+    color: #474747;
+}
+header section{
+    width: 100%;
+    align-items:flex-end;
+    
+}
+header section form {
+    display: flex;
+    align-items: center;
+}
+
+ .header1{
+    display: flex;
+    background-color: #fdf5e6;
+    color: #ee8495;
+    position:sticky
+ }
+
+ .header2{
+    background-color: #ee8495;
+    height: 70px;
+    display: flex;
+    position:sticky  
+ }
+.list_header2{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  
+}
+
+ .header_form{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+ }
+
+ /* Formato body */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    margin-bottom:50px ;
+
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    color:#292929 ;
+}
+ 
+/*Formato texto con fondo amarillo */
+.texto_fondo {
+    background-color: #fdf5e6;
+}
+
+/* Formato texto puntos de venta*/
+.texto_puntos_venta {
+    color: #474747;
+    font-size: 25px;
+    
+}
+ /* Formato links */
+a{
+    text-decoration: none;
+    margin: 5px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+
+a:hover{
+    opacity: 0.75;
+}
+
+ /* Formato de botones */
+ .btn_buscar{
+    border: none;
+    width: 50px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: transparent;
+ }
+ .btn_buscar:hover{
+    background-color: #d3d3d3;
+    cursor: pointer;
+    border-radius: 20%;
+ }
+ 
+ .btn_filtro {
+    padding: 10px 20px;
+    background-color: #fba4bf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn_filtro {
+    background-color: #fba4bf;
+  }
+  .btn_filtro {
+    background-color: #fba4bf;
+  }
+
+/* Formato de imagenes */
+ .img_index{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+
+ }
+ .img_index img{
+    width: 30%;
+    height: 450px;
+ }
+ .img_index2{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .img_index2 div img{
+    width: 90%;
+    height: auto;
+ }
+ /* Formato videos */
+.videos {
+    margin: 20px;
+    justify-content: space-between;
+
+}
+
+.puntos_venta {
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: space-between;
+    margin: 30px;
+}
+.puntos_venta >*:first-child{
+    align-self: stretch;
+}
+
+
+ /* Formato títulos y subtitulos */
+ h2{
+    margin: 20px;
+    color: #474747;
+    font-size: 28px;
+ }
+
+
+ .piezas_div {
+    display: flex;
+ }
+
+ /* Formato footer */
+  footer{
+    background-color: #ee8495;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display:flex;
+    
+    
+  }
+.list_footer {
+    list-style: none;
+    display:flex;
+   justify-content: space-around;
+   margin-left: 65%;
+
+}
+
+  /* Formato checkbox */
+.caja {
+    background-color:#fdf5e6   
+}
+/* Formato mapas */
+.mapa {
+    border: 5px solid #dc7998;
+    width: 300px;
+    height: 250px;
+}
+
+/* Formato de elementos del formulario */
+.form-element label {
+    display: inline-block;
+    width: 250px;
+}
+
+
+
