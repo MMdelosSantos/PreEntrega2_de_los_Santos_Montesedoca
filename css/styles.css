@@ -3,11 +3,17 @@ header{
     display: block;
     position:sticky;
     margin-top: 0%;
-
+    background-color:#ee8495;
 }
+
+/* Formato color lista */
+.color_list {
+    color:#ffffff
+}
+
 h1{
-    color: #474747;
-    font-size: 28px;
+    color: #363535;
+    font-size: 24px;
 }
 header section{
     width: 100%;
@@ -74,29 +80,26 @@ p{
 a{
     text-decoration: none;
     margin: 5px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #ffffff;
 }
 
 a:hover{
     opacity: 0.75;
-    color:#832140;
+    color:#fffefc;
     text-decoration: none;
 }
 
  /* Formato de botones */
  .btn_buscar{
-    border: none;
-    width: 50px;
-    text-align: center;
-    padding: 10px 0 10px 0;
-    background-color: transparent;
+
+    background-color: #b24c6c;
+    border: #770d2f;
  }
  .btn_buscar:hover{
-    background-color: #d1d0c9;
-    cursor: pointer;
-    border-radius: 15%;
+    background-color: #da6b8e;
+
  }
  
  .btn_filtro {
@@ -186,6 +189,13 @@ a:hover{
 
 }
 
+footer a:hover {
+    color: #e4e4e4
+}
+
+footer a {
+    color: #ffffff;
+}
   /* Formato checkbox */
 .caja {
     background-color:#fdf5e6   
@@ -209,6 +219,11 @@ a:hover{
    color: #ffffff;
    background-color: #52a4b0;
    border: #1d7c8b;
+}
+
+.btn_contacto:hover {
+    background-color: #04434d;
+    color: #ffffff
 }
 
 
