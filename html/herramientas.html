@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramientas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
 </head>
 
@@ -15,130 +16,150 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a href="index.html"><img src="../Imagenes/Logo_color2.png" alt="Logo de Cerámicas El Barro" width="100px" /></a>
-            <h1>Cerámicas <br> El Barro</h1>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 color_list">
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="piezas_menaje.html">Piezas Menaje</a>
-                    </li>
-                    <li>
-                        <a href="piezas_decoracion.html">Piezas Decoración</a>
-                    </li>
-                    <li>
-                        <a href="piezas_joyeria.html">Piezas Joyería</a>
-                    </li>
-                    <li>
-                        <a href="herramientas.html">Herramientas</a>
-                    </li> 
-                    <li>
-                        <a href="esmaltes_y_pigmentos.html">Esmaltes y Pigmentos</a>
-                    </li>
-                    <li>
-                        <a href="talleres.html">Talleres</a>
-                    </li>    
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar artículo" aria-label="Search">
-                  <button class="btn btn-primary btn_buscar" type="submit">Buscar</button>
+                <a href="index.html"><img src="../Imagenes/Logo_color2.png" alt="Logo de Cerámicas El Barro"
+                        width="100px" /></a>
+                <h1>Cerámicas <br> El Barro</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 color_list">
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="piezas_menaje.html">Piezas Menaje</a>
+                        </li>
+                        <li>
+                            <a href="piezas_decoracion.html">Piezas Decoración</a>
+                        </li>
+                        <li>
+                            <a href="piezas_joyeria.html">Piezas Joyería</a>
+                        </li>
+                        <li>
+                            <a href="herramientas.html">Herramientas</a>
+                        </li>
+                        <li>
+                            <a href="esmaltes_y_pigmentos.html">Esmaltes y Pigmentos</a>
+                        </li>
+                        <li>
+                            <a href="talleres.html">Talleres</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar artículo"
+                            aria-label="Search">
+                        <button class="btn btn-primary btn_buscar" type="submit">Buscar</button>
 
-                </form>
-              </div>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
-<main>
-    <section class="piezas_div">
-        <div>
-            <input type="range" id="precio" name="precio" />
-            <fieldset class="caja">
-                <legend>Tipo de producto:</legend>
+    <main>
+        <section class="piezas_div">
+            <div>
+                <div class="wrapper">
+                    <header>
+                        <h2>Rango de precio</h2>
+                        <p>Use el slider para indicar precio mínimo y máximo</p>
+                    </header>
+                    <div class="price-input">
+                        <div class="field">
+                            <span>Min</span>
+                            <input type="number" class="input-min" value="50">
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                            <span>Max</span>
+                            <input type="number" class="input-max" value="4000">
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
+                        <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                    </div>
+                </div>
+                <script src="../javascript/script.js"></script>
+                <fieldset class="caja">
+                    <legend>Tipo de producto:</legend>
 
-                <div>
-                    <input type="checkbox" id="rodillos" name="rodillos" checked />
-                    <label for="rodillos">Rodillos</label>
-                </div>
+                    <div>
+                        <input type="checkbox" id="rodillos" name="rodillos" checked />
+                        <label for="rodillos">Rodillos</label>
+                    </div>
 
-                <div>
-                    <input type="checkbox" id="desbastadores" name="desbastadores" />
-                    <label for="desbastadores">Desbastadores</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="cortantes" name="cortantes" checked />
-                    <label for="cortantes">Cortantes</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="sellos" name="sellos" checked />
-                    <label for="sellos">Sellos</label>
-                </div>
-            </fieldset>
-        </div>  
-        <div>
-            <h2>Herramientas</h2>
-            <button class=btn_filtro>Ordenar alfabeticamente</button>
-            <button class=btn_filtro>Ordenar por precio</button>
-            <section class="img_index2">
-                <div>
-                    <img src="../Imagenes/rodillo_cortador.png"
-                    alt="Rodillo cortador">
-                <p>Rodillo para cortar cerámica. Precio $ UYU 2500 </p>
-                </div>
-                <div>
-                    <img src="../Imagenes/desbastadores.png"
-                    alt="Desbastador de cerámica">
-                <p>Desbastador de cerámica. Precio $ UYU 150 </p>
-                </div>
-                <div>
-     
-                    <img src="../Imagenes/sellos_hojas.jpg"
-                    alt="Sello para cerámica con forma de hoja">
-                <p>Sello para cerámica con forma de hoja. Precio $ UYU 350 </p>
-                </div>
-                <div>
-                    <img src="../Imagenes/set_cortantes_corazon.png"
-                    alt="Set de cortantes con forma de corazón">
-                <p>Set de cortantes con forma de corazón. Precio $ UYU 800 </p>
-                </div>
-                <div>
-                    <img src="../Imagenes/rodillo_textura_rombos.png"
-                    alt="Rodillo para dar textura de rombos">
-                <p>Rodillo texturizador, forma de rombos. Precio $ UYU 300 </p>
-                </div>
-                <div>
-                    <img src="../Imagenes/set_cortantes_pequeños.png"
-                    alt="Set cortantes pequeños para ceramica">
-                <p>Set cortantes pequeños para ceramica. Precio $ UYU 870 </p>
-                </div>
-                <div>
-                    <img src="../Imagenes/set_rodillos_texturizadores.jpg"
-                    alt="Set de 6 rodillos texturizadores">
-                <p>Set de 6 rodillos con distintas texturas. Precio $ UYU 1500 </p>
-                </div>
-                <div>
-                    <img src="../Imagenes/raspadores_ metal.jpg"
-                    alt="raspadores de metal para ceramica">
-                <p>Raspadores de metal para cerámica. Precio unitario $ UYU 500 </p>
-            </section>
-        </div>
+                    <div>
+                        <input type="checkbox" id="desbastadores" name="desbastadores" />
+                        <label for="desbastadores">Desbastadores</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cortantes" name="cortantes" checked />
+                        <label for="cortantes">Cortantes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sellos" name="sellos" checked />
+                        <label for="sellos">Sellos</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <h2>Herramientas</h2>
+                <button class=btn_filtro>Ordenar alfabeticamente</button>
+                <button class=btn_filtro>Ordenar por precio</button>
+                <section class="img_index2">
+                    <div>
+                        <img src="../Imagenes/rodillo_cortador.png" alt="Rodillo cortador">
+                        <p>Rodillo para cortar cerámica. Precio $ UYU 2500 </p>
+                    </div>
+                    <div>
+                        <img src="../Imagenes/desbastadores.png" alt="Desbastador de cerámica">
+                        <p>Desbastador de cerámica. Precio $ UYU 150 </p>
+                    </div>
+                    <div>
 
-    </section>
-</main>
+                        <img src="../Imagenes/sellos_hojas.jpg" alt="Sello para cerámica con forma de hoja">
+                        <p>Sello para cerámica con forma de hoja. Precio $ UYU 350 </p>
+                    </div>
+                    <div>
+                        <img src="../Imagenes/set_cortantes_corazon.png" alt="Set de cortantes con forma de corazón">
+                        <p>Set de cortantes con forma de corazón. Precio $ UYU 800 </p>
+                    </div>
+                    <div>
+                        <img src="../Imagenes/rodillo_textura_rombos.png" alt="Rodillo para dar textura de rombos">
+                        <p>Rodillo texturizador, forma de rombos. Precio $ UYU 300 </p>
+                    </div>
+                    <div>
+                        <img src="../Imagenes/set_cortantes_pequeños.png" alt="Set cortantes pequeños para ceramica">
+                        <p>Set cortantes pequeños para ceramica. Precio $ UYU 870 </p>
+                    </div>
+                    <div>
+                        <img src="../Imagenes/set_rodillos_texturizadores.jpg" alt="Set de 6 rodillos texturizadores">
+                        <p>Set de 6 rodillos con distintas texturas. Precio $ UYU 1500 </p>
+                    </div>
+                    <div>
+                        <img src="../Imagenes/raspadores_ metal.jpg" alt="raspadores de metal para ceramica">
+                        <p>Raspadores de metal para cerámica. Precio unitario $ UYU 500 </p>
+                </section>
+            </div>
+
+        </section>
+    </main>
     <footer>
         <ul class="list_footer">
             <li>
                 <a href="https://www.instagram.com/" target="blank">Instagram</a>
             </li>
             <li>
-                <a href="puntos_de_venta.html">Puntos de venta</a>                    
+                <a href="puntos_de_venta.html">Puntos de venta</a>
             </li>
             <li>
-                <a href="sobre_nosotros.html">Sobre nosotros</a>                    
+                <a href="sobre_nosotros.html">Sobre nosotros</a>
             </li>
             <li>
                 <a href="contacto.html">Contacto</a>
