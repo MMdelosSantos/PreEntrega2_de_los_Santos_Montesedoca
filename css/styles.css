@@ -1,76 +1,60 @@
 /* Formato header */
-header{
-    display: block;
-    position:sticky;
-    margin-top: 0%;
-    background-color:#ee8495;
+header {
+  display: block;
+  position: sticky;
+  margin-top: 0%;
+  background-color: #ee8495;
+  width: 100%;
 }
 
 /* Formato color lista */
 .color_list {
-    color:#ffffff
+  color: #ffffff
 }
 
-h1{
-    color: #ffffff;
-    font-size: 24px;
-    background-color: #b24c6c;
-    padding: 0.7%;
+h1 {
+  color: #ffffff;
+  font-size: 24px;
+  background-color: #b24c6c;
+  padding: 0.7%;
 
 }
-header section{
-    width: 100%;
-    align-items:flex-end;
-    
+
+header section {
+  width: 100%;
+  align-items: flex-end;
+
 }
+
 header section form {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
- .header1{
-    display: flex;
-    background-color: #fdf5e6;
-    color: #ee8495;
-    position:sticky
- }
-
- .header2{
-    background-color: #ee8495;
-    height: 70px;
-    display: flex;
-    position:sticky  
- }
-.list_header2{
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  
+.header_form {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
- .header_form{
-    width: 100%;
-    display: flex;
-    justify-content: end;
- }
-
- /* Formato body */
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    margin-bottom:50px ;
+/* Formato body */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
 
 }
-p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    color:#292929 ;
+
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0px;
+  color: #292929;
 }
- 
+
 /*Formato texto con fondo amarillo */
 .texto_fondo {
-    background-color: #fdf5e6;
+  background-color: #fdf5e6;
 }
 
 .txt_fondo {
@@ -79,132 +63,145 @@ p{
 
 /* Formato texto puntos de venta*/
 .texto_puntos_venta {
-    color: #474747;
-    font-size: 25px;
-    
-}
- /* Formato links */
-a{
-    text-decoration: none;
-    margin: 5px;
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #ffffff;
+  color: #474747;
+  font-size: 25px;
+
 }
 
-a:hover{
-    opacity: 0.75;
-    color:#fffefc;
-    text-decoration: none;
+/* Formato links */
+a {
+  text-decoration: none;
+  margin: 5px;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
 }
 
- /* Formato de botones */
- .btn_buscar{
+a:hover {
+  opacity: 0.75;
+  color: #fffefc;
+  text-decoration: none;
+}
 
-    background-color: #b24c6c;
-    border: #770d2f;
- }
- .btn_buscar:hover{
-    background-color: #da6b8e;
+/* Formato de botones */
+.btn_buscar {
 
- }
- 
- .btn_filtro {
-    padding: 10px 20px;
-    background-color: #fba4bf;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .btn_filtro {
-    background-color: #fba4bf;
-  }
-  .btn_filtro {
-    background-color: #fba4bf;
-  }
+  background-color: #b24c6c;
+  border: #770d2f;
+}
+
+.btn_buscar:hover {
+  background-color: #da6b8e;
+
+}
+
+.btn_filtro {
+  padding: 10px 20px;
+  background-color: #fba4bf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_filtro {
+  background-color: #fba4bf;
+}
+
+.btn_filtro {
+  background-color: #fba4bf;
+}
 
 /* Formato de imagenes */
- .img_index{
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-
- }
- .img_index img{
-    width: 30%;
-    height: 450px;
- }
- .img_index2{
-    margin: 20px;
-    display:flex;
-    justify-content: space-between;
- }
-
- .img_index2 div img{
-    width: 90%;
-    height: auto;
- }
- /* Formato videos */
-.videos {
-    margin: 20px;
-    justify-content: space-between;
+.img_index {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
 
 }
 
- /* Formato títulos y subtitulos */
- h2{
-    margin: 20px;
-    color: #474747;
-    font-size: 28px;
- }
+.img_index img {
+  width: 30%;
+  height: 450px;
+}
+
+.img_index2 {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img_index2 div img {
+  width: 90%;
+  height: auto;
+}
+
+/* Formato videos */
+.videos {
+  flex-flow: wrap;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
 
 
- .piezas_div {
-    display: flex;
- }
 
- /* Formato footer */
-  footer{
-    background-color: #ee8495;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    display:flex;
-    justify-content: flex-end;
-    margin-top: 1%;
-    
-  }
+/* Formato títulos y subtitulos */
+h2 {
+  margin: 20px;
+  color: #474747;
+  font-size: 28px;
+}
+
+
+.piezas_div {
+  display: flex;
+}
+
+/* Formato footer */
+footer {
+  background-color: #ee8495;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+
+}
+
 .list_footer {
-    list-style: none;
-    display:flex;
-   margin-top: 1%;
-   margin-right: 1%;
+  list-style: none;
+  display: flex;
+  margin-top: 1%;
+  margin-right: 1%;
 
 }
 
 footer a:hover {
-    color: #e4e4e4
+  color: #e4e4e4
 }
 
 footer a {
-    color: #ffffff;
+  color: #ffffff;
 }
-  /* Formato checkbox */
+
+/* Formato checkbox */
 .caja {
-    background-color:#fdf5e6   
+  background-color: #fdf5e6
 }
+
 /* Formato mapas */
 .mapa {
-    border: 5px solid #34a5b6;
-    width: 310px;
-    height: 265px;
+  border: 5px solid #34a5b6;
+  width: 310px;
+  height: 240px;
 }
 
 /* Formato de elementos del formulario */
 .form-element label {
-    display: inline-block;
-    width: 250px;
+  display: inline-block;
+  width: 250px;
 }
 
 .form-control {
@@ -212,63 +209,69 @@ footer a {
 }
 
 .form-group {
- width: 50%;
- margin-left: 2%;
+  width: 50%;
+  margin-left: 2%;
 }
 
 /* Formato botón enviar de formulario*/
-.btn_contacto{
+.btn_contacto {
 
-   color: #ffffff;
-   background-color: #52a4b0;
-   border: #1d7c8b;
-   margin-left: 50%;
-   margin-top: 2%;
-   margin-bottom: 2%;
+  color: #ffffff;
+  background-color: #52a4b0;
+  border: #1d7c8b;
+  margin-left: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .btn_contacto:hover {
-    background-color: #04434d;
-    color: #ffffff
+  background-color: #04434d;
+  color: #ffffff
 }
 
 /* Formato rango precio*/
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-.wrapper{
+.wrapper {
   width: 400px;
   background: #fff;
   border-radius: 10px;
   padding: 20px 25px 40px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
 }
-header h2{
+
+header h2 {
   font-size: 24px;
   font-weight: 600;
 }
-header p{
+
+header p {
   margin-top: 5px;
   font-size: 16px;
 }
-.price-input{
+
+.price-input {
   width: 100%;
   display: flex;
   margin: 30px 0 35px;
 }
-.price-input .field{
+
+.price-input .field {
   display: flex;
   width: 100%;
   height: 45px;
   align-items: center;
 }
-.field input{
+
+.field input {
   width: 100%;
   height: 100%;
   outline: none;
@@ -279,24 +282,28 @@ header p{
   border: 1px solid #999;
   -moz-appearance: textfield;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.price-input .separator{
+
+.price-input .separator {
   width: 130px;
   display: flex;
   font-size: 19px;
   align-items: center;
   justify-content: center;
 }
-.slider{
+
+.slider {
   height: 5px;
   position: relative;
   background: #ddd;
   border-radius: 5px;
 }
-.slider .progress{
+
+.slider .progress {
   height: 100%;
   left: 25%;
   right: 25%;
@@ -304,10 +311,12 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 5px;
   background: #17A2B8;
 }
-.range-input{
+
+.range-input {
   position: relative;
 }
-.range-input input{
+
+.range-input input {
   position: absolute;
   width: 100%;
   height: 5px;
@@ -317,16 +326,18 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-input[type="range"]::-webkit-slider-thumb{
+
+input[type="range"]::-webkit-slider-thumb {
   height: 17px;
   width: 17px;
   border-radius: 50%;
   background: #17A2B8;
   pointer-events: auto;
   -webkit-appearance: none;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
-input[type="range"]::-moz-range-thumb{
+
+input[type="range"]::-moz-range-thumb {
   height: 17px;
   width: 17px;
   border: none;
@@ -334,11 +345,11 @@ input[type="range"]::-moz-range-thumb{
   background: #17A2B8;
   pointer-events: auto;
   -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 main {
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 
 }
 
@@ -348,11 +359,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-  'nombre direccion telefono mail'
-  'nombre direccion telefono mail'
-  'nombre direccion telefono mail'
-  'nombre direccion telefono mail';
+  grid-template-areas:
+    'nombre direccion telefono mail'
+    'nombre direccion telefono mail'
+    'nombre direccion telefono mail'
+    'nombre direccion telefono mail';
 }
 
 .grid_item-1 {
@@ -370,4 +381,3 @@ main {
 .grid_item-4 {
   grid-area: mail;
 }
-
