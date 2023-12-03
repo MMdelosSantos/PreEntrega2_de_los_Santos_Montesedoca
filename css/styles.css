@@ -15,6 +15,8 @@ h1{
     color: #ffffff;
     font-size: 24px;
     background-color: #b24c6c;
+    padding: 0.7%;
+
 }
 header section{
     width: 100%;
@@ -169,17 +171,15 @@ a:hover{
     position: fixed;
     width: 100%;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 1%;
     
   }
 .list_footer {
     list-style: none;
     display:flex;
-   justify-content: space-around;
-   margin-left: 65%;
    margin-top: 1%;
+   margin-right: 1%;
 
 }
 
