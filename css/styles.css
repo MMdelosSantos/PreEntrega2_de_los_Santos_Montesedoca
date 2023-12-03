@@ -129,6 +129,9 @@ a:hover {
   margin: 20px;
   display: flex;
   justify-content: space-between;
+  display:flex;
+  flex-flow: wrap;
+  
 }
 
 .img_index2 div img {
