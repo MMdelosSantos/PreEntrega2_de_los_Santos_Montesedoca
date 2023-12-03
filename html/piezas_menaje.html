@@ -61,106 +61,109 @@
         </nav>
     </header>
     <main>
-        <section class="piezas_div">
-            <div>
-                <div class="wrapper">
-                    <header>
-                        <h2>Rango de precio</h2>
-                        <p>Use el slider para indicar precio mínimo y máximo</p>
-                    </header>
-                    <div class="price-input">
-                        <div class="field">
-                            <span>Min</span>
-                            <input type="number" class="input-min" value="50">
+        <div class="piezas_div">
+            <div class="pag_rango_checkbox">
+                <div class="piezas_div_wrap">
+                    <div class="wrapper">
+                        <div class="rango_texto">
+                            <h2>Rango de precio</h2>
+                            <p>Use el slider para indicar precio mínimo y máximo</p>
                         </div>
-                        <div class="separator">-</div>
-                        <div class="field">
-                            <span>Max</span>
-                            <input type="number" class="input-max" value="4000">
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="50">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="4000">
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
-                        <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
+                            <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                        </div>
+                        <script src="../javascript/script.js"></script>
                     </div>
                 </div>
-                <script src="../javascript/script.js"></script>
+                <fieldset class="caja">
+                    <legend class="h3">Tipo de producto:</legend>
+                    <div>
+                        <input type="checkbox" id="tazas" name="tazas" checked />
+                        <label for="tazas">Tazas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="platos" name="platos" />
+                        <label for="platos">Platos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="jarras_y_jarrones" name="jarras_y_jarrones" />
+                        <label for="jarras_y_jarrones">Jarras y Jarrones</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bowls" name="bowls" />
+                        <label for="bowls">Bowls</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="contenedores" name="contenedores" />
+                        <label for="contenedores">Contenedores</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="otros" name="otros" />
+                        <label for="otros">Otros</label>
+                    </div>
+                </fieldset>
             </div>
-            <fieldset class="caja">
-                <legend>Tipo de producto:</legend>
+            <div class="pag_img_btn_orden">
                 <div>
-                    <input type="checkbox" id="tazas" name="tazas" checked />
-                    <label for="tazas">Tazas</label>
+                    <h2>Menaje</h2>
+                    <button class=btn_filtro>Ordenar alfabeticamente</button>
+                    <button class=btn_filtro>Ordenar por precio</button>
                 </div>
-                <div>
-                    <input type="checkbox" id="platos" name="platos" />
-                    <label for="platos">Platos</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="jarras_y_jarrones" name="jarras_y_jarrones" />
-                    <label for="jarras_y_jarrones">Jarras y Jarrones</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="bowls" name="bowls" />
-                    <label for="bowls">Bowls</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="contenedores" name="contenedores" />
-                    <label for="contenedores">Contenedores</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="otros" name="otros" />
-                    <label for="otros">Otros</label>
-                </div>
-            </fieldset>
-            </div>
-            <div>
-                <h2>Menaje</h2>
-                <button class=btn_filtro>Ordenar alfabeticamente</button>
-                <button class=btn_filtro>Ordenar por precio</button>
-                <section class="img_index2">
+                <div class="img_index2">
                     <div>
                         <img src="../Imagenes/compoteras_blancas_y_rosadas.jpg"
                             alt="Juego de compoteras blancas y rosadas">
-                        <p>Juego de compoteras blancas y rosadas. Precio $ UYU 1500 </p>
+                        <p>Juego de compoteras blancas y rosadas.<br> Precio $ UYU 1500 </p>
                     </div>
                     <div>
                         <img src="../Imagenes/jarra_a_rayas.png" alt="Jarra blanca con líneas verticales en azul">
-                        <p>Jarra blanca con líneas verticales en azul. Precio UYU 980</p>
+                        <p>Jarra blanca con líneas verticales en azul. <br>Precio UYU 980</p>
                     </div>
                     <div>
                         <img src="../Imagenes/caldera_calabaza.png" alt="Caldera calabaza">
-                        <p>Caldera en forma de calabaza de cerámica.Precio $ UYU 1200 </p>
+                        <p>Caldera en forma de calabaza de cerámica.<br>Precio $ UYU 1200 </p>
                     </div>
                     <div>
                         <img src="../Imagenes/porta_torta_rayas.jpg" alt="Porta tortas con líneas rosadas y terracota">
-                        <p>Porta torta con líneas rosadas y terracota. Precio $ UYU 1500</p>
+                        <p>Porta torta con líneas rosadas y terracota. <br>Precio $ UYU 1500</p>
                     </div>
                     <div>
                         <img src="../Imagenes/frasco_blanco_y_puntos.png"
                             alt="Frasco de cerámica blanco con puntos marrones">
-                        <p>Frasco de cerámica blanco con puntos marrones. Precio $ UYU 800</p>
+                        <p>Frasco de cerámica blanco con puntos marrones.<br> Precio $ UYU 800</p>
                     </div>
                     <div>
                         <img src="../Imagenes/platos_multicolor.jpg" alt="Plato multicolor de cerámica">
-                        <p>Plato de cerámica con varios colores. Precio unitario $ UYU 300 </p>
+                        <p>Plato de cerámica con varios colores. <br>Precio unitario $ UYU 300 </p>
                     </div>
                     <div>
                         <img src="../Imagenes/juego_tazas_blanca.png"
                             alt="Juego de tazas de cerámica blanca con textura">
-                        <p>Juego de tazas de cerámica blanca con textura. Precio $ UYU 950 </p>
+                        <p>Juego de tazas de cerámica blanca con textura.<br> Precio $ UYU 950 </p>
                     </div>
                     <div>
                         <img src="../Imagenes/mantequera_rosada.jpg" alt="Mantequera rosada y blanca">
-                        <p>Mantequera rosada y blanca. Precio $ UYU 500</p>
+                        <p>Mantequera rosada y blanca. <br>Precio $ UYU 500</p>
                     </div>
 
-                </section>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <ul class="list_footer">
