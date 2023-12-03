@@ -60,36 +60,37 @@
         </nav>
     </header>
     <main>
-        <section class="piezas_div">
-            <div>
-                <div class="wrapper">
-                    <header>
-                        <h2>Rango de precio</h2>
-                        <p>Use el slider para indicar precio mínimo y máximo</p>
-                    </header>
-                    <div class="price-input">
-                        <div class="field">
-                            <span>Min</span>
-                            <input type="number" class="input-min" value="50">
+        <div class="piezas_div">
+            <div class="pag_rango_checkbox">
+                <div class="piezas_div_wrap">
+                    <div class="wrapper">
+                        <div class="rango_texto">
+                            <h2>Rango de precio</h2>
+                            <p>Use el slider para indicar precio mínimo y máximo</p>
                         </div>
-                        <div class="separator">-</div>
-                        <div class="field">
-                            <span>Max</span>
-                            <input type="number" class="input-max" value="4000">
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="50">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="4000">
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
-                        <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
+                            <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                        </div>
+                        <script src="../javascript/script.js"></script>
                     </div>
                 </div>
-                <script src="../javascript/script.js"></script>
                 <fieldset class="caja">
-                    <legend>Tipo de producto:</legend>
-
+                    <legend class="h3">Tipo de producto:</legend>
                     <div>
                         <input type="checkbox" id="anillos" name="anillos" checked />
                         <label for="anillos">Anillos</label>
@@ -109,11 +110,13 @@
                     </div>
                 </fieldset>
             </div>
-            <div>
-                <h2>Joyas</h2>
-                <button class=btn_filtro>Ordenar alfabeticamente</button>
-                <button class=btn_filtro>Ordenar por precio</button>
-                <section class="img_index2">
+            <div class="pag_img_btn_orden">
+                <div>
+                    <h2>Joyas</h2>
+                    <button class=btn_filtro>Ordenar alfabeticamente</button>
+                    <button class=btn_filtro>Ordenar por precio</button>
+                </div>
+                <div class="img_index2">
                     <div>
                         <img src="../Imagenes/anillo_blanco_y_dorado.jpg" alt="Anillo blanco y dorado de cerámica">
                         <p>Anillo blanco y dorado de cerámica. Precio $ UYU 570 </p>
@@ -148,9 +151,9 @@
                         <img src="../Imagenes/collar_flor_y_paloma.png" alt="Collar de cerámica con flor y paloma">
                         <p>Collar de cerámica con flor y paloma. Precio $ UYU 340 </p>
                     </div>
+                    </section>
+                </div>
                 </section>
-            </div>
-        </section>
     </main>
     <footer>
         <ul class="list_footer">

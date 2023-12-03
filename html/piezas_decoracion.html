@@ -60,65 +60,69 @@
         </nav>
     </header>
     <main>
-        <section class="piezas_div">
-            <div class="wrapper">
-                <header>
-                    <h2>Rango de precio</h2>
-                    <p>Use el slider para indicar precio mínimo y máximo</p>
-                </header>
-                <div class="price-input">
-                    <div class="field">
-                        <span>Min</span>
-                        <input type="number" class="input-min" value="50">
+        <div class="piezas_div">
+            <div class="pag_rango_checkbox">
+                <div class="piezas_div_wrap">
+                    <div class="wrapper">
+                        <div class="rango_texto">
+                            <h2>Rango de precio</h2>
+                            <p>Use el slider para indicar precio mínimo y máximo</p>
+                        </div>
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="50">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="4000">
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
+                            <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                        </div>
+                        <script src="../javascript/script.js"></script>
                     </div>
-                    <div class="separator">-</div>
-                    <div class="field">
-                        <span>Max</span>
-                        <input type="number" class="input-max" value="4000">
+                </div>
+                <fieldset class="caja">
+                    <legend class="h3">Tipo de producto:</legend>
+                    <div>
+                        <input type="checkbox" id="bandejas" name="bandejas" checked />
+                        <label for="bandejas">Bandejas</label>
                     </div>
-                </div>
-                <div class="slider">
-                    <div class="progress"></div>
-                </div>
-                <div class="range-input">
-                    <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
-                    <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
-                </div>
+
+                    <div>
+                        <input type="checkbox" id="candelabros" name="candelabros" />
+                        <label for="candelabros">Candelabros</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="floreros" name="floreros" />
+                        <label for="floreros">Floreros</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="contenedor_organizador" name="contenedor_organizador" />
+                        <label for="contenedor_organizador">Contenedores y Organizadores</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="otros" name="otros" />
+                        <label for="otros">Otros</label>
+                    </div>
+
+                </fieldset>
             </div>
-            <script src="../javascript/script.js"></script>
-            <fieldset class="caja">
-                <legend>Tipo de producto:</legend>
-
+            <div class="pag_img_btn_orden">
                 <div>
-                    <input type="checkbox" id="bandejas" name="bandejas" checked />
-                    <label for="bandejas">Bandejas</label>
+                    <h2>Decoración</h2>
+                    <button class=btn_filtro>Ordenar alfabeticamente</button>
+                    <button class=btn_filtro>Ordenar por precio</button>
                 </div>
-
-                <div>
-                    <input type="checkbox" id="candelabros" name="candelabros" />
-                    <label for="candelabros">Candelabros</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="floreros" name="floreros" />
-                    <label for="floreros">Floreros</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="contenedor_organizador" name="contenedor_organizador" />
-                    <label for="contenedor_organizador">Contenedores y Organizadores</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="otros" name="otros" />
-                    <label for="otros">Otros</label>
-                </div>
-
-            </fieldset>
-            </div>
-            <div>
-                <h2>Decoración</h2>
-                <button class=btn_filtro>Ordenar alfabeticamente</button>
-                <button class=btn_filtro>Ordenar por precio</button>
-                <section class="img_index2">
+                <div class="img_index2">
                     <div>
                         <img src="../Imagenes/bandeja_hoja.png" alt="Bandeja de cerámica en forma de hoja">
                         <p>Bandeja de cerámica en forma de hoja. Precio $ UYU 620 </p>
@@ -153,9 +157,9 @@
                         <img src="../Imagenes/florero_blanco.png" alt="Florero blanco de cerámica">
                         <p>Florero blanco de cerámica. Precio $ UYU 500 </p>
                     </div>
+                    </section>
+                </div>
                 </section>
-            </div>
-        </section>
     </main>
     <footer>
         <ul class="list_footer">

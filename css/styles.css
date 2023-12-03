@@ -129,7 +129,6 @@ a:hover {
   display: flex;
   flex-flow: wrap;
   width: 60%
-
 }
 
 .img_index2 {
@@ -151,12 +150,13 @@ a:hover {
   height: 80px;
   display: flex;
   flex-flow: wrap;
-  }
+}
 
 .img_index div img {
   width: 200px;
   height: 200px;
 }
+
 /* Formato videos */
 .videos {
   flex-flow: wrap;
@@ -221,6 +221,7 @@ footer a {
   font-size: 18px;
   color: #292929;
 }
+
 /* Formato mapas */
 .mapa {
   border: 5px solid #34a5b6;

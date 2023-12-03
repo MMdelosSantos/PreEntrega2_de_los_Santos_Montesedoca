@@ -59,36 +59,37 @@
         </nav>
     </header>
     <main>
-        <section class="piezas_div">
-            <div>
-                <div class="wrapper">
-                    <header>
-                        <h2>Rango de precio</h2>
-                        <p>Use el slider para indicar precio mínimo y máximo</p>
-                    </header>
-                    <div class="price-input">
-                        <div class="field">
-                            <span>Min</span>
-                            <input type="number" class="input-min" value="50">
+        <div class="piezas_div">
+            <div class="pag_rango_checkbox">
+                <div class="piezas_div_wrap">
+                    <div class="wrapper">
+                        <div class="rango_texto">
+                            <h2>Rango de precio</h2>
+                            <p>Use el slider para indicar precio mínimo y máximo</p>
                         </div>
-                        <div class="separator">-</div>
-                        <div class="field">
-                            <span>Max</span>
-                            <input type="number" class="input-max" value="4000">
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="50">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="4000">
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
-                        <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="50" max="4000" value="100" step="50">
+                            <input type="range" class="range-max" min="50" max="4000" value="4000" step="50">
+                        </div>
+                        <script src="../javascript/script.js"></script>
                     </div>
                 </div>
-                <script src="../javascript/script.js"></script>
                 <fieldset class="caja">
-                    <legend>Tipo de producto:</legend>
-
+                    <legend class="h3">Tipo de producto:</legend>
                     <div>
                         <input type="checkbox" id="esmaltes" name="esmaltes" checked />
                         <label for="esmaltes">Esmaltes</label>
@@ -100,11 +101,13 @@
                     </div>
                 </fieldset>
             </div>
-            <div>
-                <h2>Esmaltes y Pigmentos</h2>
-                <button class=btn_filtro>Ordenar alfabeticamente</button>
-                <button class=btn_filtro>Ordenar por precio</button>
-                <section class="img_index2">
+            <div class="pag_img_btn_orden">
+                <div>
+                    <h2>Esmaltes y pigmentos</h2>
+                    <button class=btn_filtro>Ordenar alfabeticamente</button>
+                    <button class=btn_filtro>Ordenar por precio</button>
+                </div>
+                <div class="img_index2">
                     <div>
                         <img src="../Imagenes/esmaltes_mate.png" alt="Esmaltes mate para cerámica">
                         <p>Esmaltes mate para cerámica. Precio $ UYU 160 </p>
@@ -137,9 +140,9 @@
                         <img src="../Imagenes/esmaltes.png" alt="Esmaltes para cerámica">
                         <p>Esmaltes para cerámica. Precio unitario $ UYU 150 </p>
 
-                </section>
-            </div>
-        </section>
+                        </section>
+                    </div>
+                    </section>
     </main>
     <footer>
         <ul class="list_footer">
