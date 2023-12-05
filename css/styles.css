@@ -52,13 +52,8 @@ p {
   color: #292929;
 }
 
-/*Formato texto con fondo amarillo */
-.texto_fondo {
-  background-color: #fdf5e6;
-}
-
 .txt_fondo {
-  padding: 20px;
+  margin-left:  20px;
 }
 
 /* Formato links */
@@ -111,17 +106,20 @@ a:hover {
   height: 350px;
 }
 
+.img {
+  margin: 15px;
+}
 .pag_rango_checkbox {
   display: flex;
   flex-flow: wrap;
-  width: 35%;
-  margin: 5px;
+  width: 500px;
+  margin: 15px;
 }
 
 .pag_img_btn_orden {
   display: flex;
   flex-flow: wrap;
-  width: 60%
+  width: 950px
 }
 
 .img_index2 {
@@ -227,7 +225,6 @@ footer a {
 /* Formato de elementos del formulario */
 .form-element label {
   display: inline-block;
-  width: 250px;
 }
 
 .form-control {
@@ -235,8 +232,14 @@ footer a {
 }
 
 .form-group {
-  width: 50%;
-  margin-left: 2%;
+  width: 100%;
+}
+
+
+/* Formato del formulario contacto */
+.form_contacto {
+  width: 800px;
+  padding: 15px;
 }
 
 /* Formato botón enviar de formulario*/
@@ -425,4 +428,14 @@ span {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
+}
+
+.form_contacto_img {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.col img {
+ padding: 20px;
 }
