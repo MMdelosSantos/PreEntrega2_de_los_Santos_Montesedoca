@@ -43,7 +43,6 @@ body {
   margin: 0px;
   margin-bottom: 50px;
   padding-bottom: 10px;
-
 }
 
 p {
@@ -53,7 +52,7 @@ p {
 }
 
 .txt_fondo {
-  margin-left:  20px;
+  margin-left: 20px;
 }
 
 /* Formato links */
@@ -90,15 +89,15 @@ a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 5px;
 }
 
 /* Formato de imagenes */
 .img_index {
-  margin: 20px;
+  margin: 15px;
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
-
 }
 
 .img_index img {
@@ -109,6 +108,7 @@ a:hover {
 .img {
   margin: 15px;
 }
+
 .pag_rango_checkbox {
   display: flex;
   flex-flow: wrap;
@@ -169,6 +169,7 @@ h2 {
 .piezas_div {
   display: flex;
   flex-flow: wrap;
+  margin: 15px;
 }
 
 /* Formato footer */
@@ -218,7 +219,7 @@ footer a {
 /* Formato mapas */
 .mapa {
   border: 5px solid #f4a289;
-   width: 310px;
+  width: 310px;
   height: 230px;
 }
 
@@ -405,7 +406,7 @@ main {
   align-items: center;
 }
 
-.grid_item{
+.grid_item {
   background-color: #caecf5;
   color: #313131;
   display: flex;
@@ -437,5 +438,45 @@ span {
 }
 
 .col img {
- padding: 20px;
+  padding: 20px;
+}
+
+/*Responsive Media query*/
+/*Ajuste en tamaño de letra*/
+@media only screen and (max-width: 500px) {
+  a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header p {
+    font-size: 18px;
+  }
+}
+
+/*Eliminar selector de tipo de producto y rango de precio*/
+@media screen and (max-width: 500px) {
+  .pag_rango_checkbox {
+    display: none !important;
+  }
+}
+
+/*Cambio color de header*/
+@media screen and (max-width: 300px) {
+  header {
+    background-color: #ffffff;
+  }
+}
+@media screen and (max-width: 300px) {
+  header a{
+    color: #ee8495 ;
+    font-weight: 500;
+  }
 }
