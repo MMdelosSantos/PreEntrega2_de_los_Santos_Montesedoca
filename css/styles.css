@@ -123,6 +123,11 @@ a:hover {
   margin: 15px;
 }
 
+.img-fluid {
+  max-width: 280px;
+  width: 100%;
+}
+
 .pag_rango_checkbox {
   display: flex;
   flex-flow: wrap;
