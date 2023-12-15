@@ -39,19 +39,18 @@ header p {
   width: 100%;
 }
 
-/*-----------------------------------------------------------Formato nombre marca------------------------------------------------------------ */
-
 h1 {
   color: #ffffff;
   font-size: 24px;
   background-color: #34a5b6b0;
   padding: 0.7%;
+  width: 130px;
 
 }
 
 /*-------------------------------------------------------------Formato main -------------------------------------------------------------------*/
 main {
-  margin-bottom:5%;
+  margin-bottom: 5%;
 }
 
 /* --------------------------------------------------------------Formato h3 -------------------------------------------------------------------*/
@@ -164,8 +163,19 @@ a:hover {
   display: flex;
   gap: 1rem;
   list-style: none;
+  margin-bottom: 60px;
 }
 
+.video_individual {
+  max-width: 300px;
+  width: 100%;
+}
+
+.videos ul {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px;
+}
 /* -------------------------------------------------------Formato de checkbox ----------------------------------------------------------------*/
 .pag_rango_checkbox {
   display: flex;
@@ -404,41 +414,45 @@ span {
 }
 
 /*------------------------------------------------------------Responsive Media query---------------------------------------------------------*/
-/*Ajuste en tamaño de letra*/
-@media only screen and (max-width: 500px) {
-  a {
-    font-size: 14px;
+/*Ajuste en tamaño de letra general*/
+@media screen and (max-width: 480px) {
+  * {
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 500px) {
-  header h2 {
+/*Ajuste en tamaño de letra de h1*/
+@media screen and (max-width: 480px) {
+  h1 {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 500px) {
+/*Ajuste en tamaño de letra de los p en header*/
+@media screen and (max-width: 480px) {
   header p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+
+/*Ajuste en tamaño de letra de links */
+@media only screen and (max-width: 480px) {
+  a {
+    font-size: 12px;
+  }
+}
+
+
+/*Ajuste en tamaño de letra de h2 de header*/
+@media screen and (max-width: 480px) {
+  header h2 {
+    font-size: 14px;
   }
 }
 
 /*Eliminar selector de tipo de producto y rango de precio*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .pag_rango_checkbox {
     display: none !important;
-  }
-}
-
-/*Cambio color de header
-@media screen and (max-width: 300px) {
-  header {
-    background-color: #ffffff;
-  }
-}
-@media screen and (max-width: 300px) {
-  header a{
-    color: #ee8495 ;
-    font-weight: 500;
   }
 }
