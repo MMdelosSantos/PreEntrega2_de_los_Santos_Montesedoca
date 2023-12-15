@@ -1,12 +1,19 @@
-/* Formato global*/
+/*--------------------------------------------------------- Formato global de letra----------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Formato header */
+/*------------------------------------------------------- Formato títulos y subtitulos ------------------------------------------------------*/
+h2 {
+  margin: 20px;
+  color: #474747;
+  font-size: 22px;
+}
+
+/* ------------------------------------------------------------Formato header ---------------------------------------------------------------*/
 header {
   display: block;
   position: sticky;
@@ -15,16 +22,24 @@ header {
   width: 100%;
 }
 
-/* Formato logo */
+header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* -------------------------------------------------------------Formato logo----------------------------------------------------------------- */
 
 .logo {
   max-width: 150px;
   width: 100%;
 }
-/* Formato color lista */
-.color_list {
-  color: #ffffff
-}
+
+/*-----------------------------------------------------------Formato nombre marca------------------------------------------------------------ */
 
 h1 {
   color: #ffffff;
@@ -34,42 +49,20 @@ h1 {
 
 }
 
-header section {
-  width: 100%;
-  align-items: flex-end;
-
+/*-------------------------------------------------------------Formato main -------------------------------------------------------------------*/
+main {
+  margin-bottom:5%;
 }
 
-header section form {
-  display: flex;
-  align-items: center;
+/* --------------------------------------------------------------Formato h3 -------------------------------------------------------------------*/
+.h3 {
+  font-size: 18px;
+  color: #313131;
+  margin: 15px;
+  font-family: sans-serif;
 }
 
-.header_form {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
-
-/* Formato body */
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0px;
-  margin-bottom: 50px;
-  padding-bottom: 10px;
-}
-
-p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0px;
-  color: #292929;
-}
-
-.txt_fondo {
-  margin-left: 20px;
-}
-
-/* Formato links */
+/*-------------------------------------------------------------- Formato links ---------------------------------------------------------------*/
 a {
   text-decoration: none;
   margin: 5px;
@@ -84,16 +77,14 @@ a:hover {
   text-decoration: none;
 }
 
-/* Formato de botones */
+/* ---------------------------------------------------------- Formato de botones ------------------------------------------------------------ */
 .btn_buscar {
-
   background-color: #b24c6c;
   border: #770d2f;
 }
 
 .btn_buscar:hover {
   background-color: #da6b8e;
-
 }
 
 .btn_filtro {
@@ -106,7 +97,13 @@ a:hover {
   margin: 5px;
 }
 
-/* Formato de imagenes */
+.pag_img_btn_orden {
+  display: flex;
+  flex-flow: wrap;
+  width: 950px
+}
+
+/* --------------------------------------------------------- Formato de imagenes------------------------------------------------------------- */
 .img_index {
   margin: 15px;
   display: flex;
@@ -128,19 +125,6 @@ a:hover {
   width: 100%;
 }
 
-.pag_rango_checkbox {
-  display: flex;
-  flex-flow: wrap;
-  width: 500px;
-  margin: 15px;
-}
-
-.pag_img_btn_orden {
-  display: flex;
-  flex-flow: wrap;
-  width: 950px
-}
-
 .img_index2 {
   margin: 20px;
   display: flex;
@@ -154,7 +138,19 @@ a:hover {
   height: 200px;
 }
 
-/*Formato de texto debajo de imagenes */
+/* -------------------------------------------------Formato imagenes dentro de pag de venta --------------------------------------------------*/
+.piezas_div {
+  display: flex;
+  flex-flow: wrap;
+  margin: 15px;
+}
+
+/*----------------------------------------------------Formato de imagen pagina sobre nosotros------------------------------------------------ */
+.col img {
+  padding: 20px;
+}
+
+/*-----------------------------------------------------Formato de texto debajo de imagenes ---------------------------------------------------*/
 .img_index2 div p {
   width: 200px;
   height: 80px;
@@ -162,12 +158,7 @@ a:hover {
   flex-flow: wrap;
 }
 
-.img_index div img {
-  width: 200px;
-  height: 200px;
-}
-
-/* Formato videos */
+/* ------------------------------------------------------------Formato videos---------------------------------------------------------------- */
 .videos {
   flex-flow: wrap;
   display: flex;
@@ -175,23 +166,23 @@ a:hover {
   list-style: none;
 }
 
-
-
-/* Formato títulos y subtitulos */
-h2 {
-  margin: 20px;
-  color: #474747;
-  font-size: 22px;
-}
-
-
-.piezas_div {
+/* -------------------------------------------------------Formato de checkbox ----------------------------------------------------------------*/
+.pag_rango_checkbox {
   display: flex;
   flex-flow: wrap;
+  width: 500px;
   margin: 15px;
 }
 
-/* Formato footer */
+.caja {
+  background-color: #caecf5;
+  width: 150px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* -----------------------------------------------------------Formato footer----------------------------------------------------------------- */
 footer {
   background-color: #ee8495;
   bottom: 0;
@@ -199,8 +190,6 @@ footer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-
-
 }
 
 .list_footer {
@@ -219,40 +208,20 @@ footer a {
   color: #ffffff;
 }
 
-/* Formato checkbox */
-.caja {
-  background-color: #caecf5;
-  width: 150px;
-  height: 300px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.h3 {
-  font-size: 18px;
-  color: #313131;
-  margin: 15px;
-  font-family: sans-serif;
-}
-
-/* Formato mapas */
+/* ------------------------------------------------------------Formato mapas ----------------------------------------------------------------*/
 .mapa {
   border: 5px solid #f4a289;
   width: 310px;
   height: 230px;
 }
 
-/* Formato iframe mapas */
+/*----------------------------------------------------------- Formato iframe mapas -----------------------------------------------------------*/
 .mapa iframe {
   width: 100%;
   height: 100%;
 }
 
-/* Formato de elementos del formulario */
-.form-element label {
-  display: inline-block;
-}
-
+/*--------------------------------------------------- Formato de elementos del formulario contacto------------------------------------------- */
 .form-control {
   background-color: #fbf6ed;
 }
@@ -261,16 +230,19 @@ footer a {
   width: 100%;
 }
 
-
-/* Formato del formulario contacto */
 .form_contacto {
   width: 800px;
   padding: 15px;
 }
 
-/* Formato botón enviar de formulario*/
-.btn_contacto {
+.form_contacto_img {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
 
+/* ---------------------------------------------------Formato botón enviar de formulario contacto--------------------------------------------*/
+.btn_contacto {
   color: #ffffff;
   background-color: #52a4b0;
   border: #1d7c8b;
@@ -284,10 +256,9 @@ footer a {
   color: #ffffff
 }
 
-/* Formato rango precio*/
+/*----------------------------------------------------------- Formato rango de precio----------------------------------------------------------*/
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 
 .wrapper {
   width: 300px;
@@ -296,16 +267,6 @@ footer a {
   padding: 20px 25px 40px;
   box-shadow: 0 12px 35px #04434d31;
   height: 400px;
-}
-
-header h2 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-header p {
-  margin-top: 5px;
-  font-size: 16px;
 }
 
 .price-input {
@@ -403,12 +364,7 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
-main {
-  margin-bottom: 5%;
-}
-
-
-/* Formato Grilla*/
+/* ----------------------------------------------------------------Formato Grilla------------------------------------------------------------*/
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -434,15 +390,12 @@ main {
   padding: 5px;
 }
 
-/*Formato span */
+/*-------------------------------------------------------------------Formato span----------------------------------------------------------- */
 span {
   font-size: 14px;
 }
 
-.rango_texto div p {
-  display: flex;
-  flex-flow: wrap;
-}
+/*------------------------------------------------Formato de distribución página puntos de venta-------------------------------------------- */
 
 .puntos_venta {
   display: flex;
@@ -450,17 +403,7 @@ span {
   justify-content: space-around;
 }
 
-.form_contacto_img {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-}
-
-.col img {
-  padding: 20px;
-}
-
-/*Responsive Media query*/
+/*------------------------------------------------------------Responsive Media query---------------------------------------------------------*/
 /*Ajuste en tamaño de letra*/
 @media only screen and (max-width: 500px) {
   a {
@@ -487,7 +430,7 @@ span {
   }
 }
 
-/*Cambio color de header*/
+/*Cambio color de header
 @media screen and (max-width: 300px) {
   header {
     background-color: #ffffff;
