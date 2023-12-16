@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /*--------------------------------------------------------- Formato global de letra----------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*------------------------------------------------------- Formato títulos y subtitulos ------------------------------------------------------*/
@@ -21,19 +23,16 @@ header {
   background-color: #ee8495;
   width: 100%;
 }
-
+header p {
+  margin-top: 5px;
+  font-size: 16px;
+}
 header h2 {
   font-size: 24px;
   font-weight: 600;
 }
 
-header p {
-  margin-top: 5px;
-  font-size: 16px;
-}
-
 /* -------------------------------------------------------------Formato logo----------------------------------------------------------------- */
-
 .logo {
   max-width: 150px;
   width: 100%;
@@ -42,10 +41,9 @@ header p {
 h1 {
   color: #ffffff;
   font-size: 24px;
-  background-color: #34a5b6b0;
+  background-color: rgba(52, 165, 182, 0.6901960784);
   padding: 0.7%;
   width: 130px;
-
 }
 
 /*-------------------------------------------------------------Formato main -------------------------------------------------------------------*/
@@ -66,10 +64,9 @@ a {
   text-decoration: none;
   margin: 5px;
   font-size: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
 }
-
 a:hover {
   opacity: 0.75;
   color: #fffefc;
@@ -81,7 +78,6 @@ a:hover {
   background-color: #b24c6c;
   border: #770d2f;
 }
-
 .btn_buscar:hover {
   background-color: #da6b8e;
 }
@@ -99,7 +95,7 @@ a:hover {
 .pag_img_btn_orden {
   display: flex;
   flex-flow: wrap;
-  width: 950px
+  width: 950px;
 }
 
 /* --------------------------------------------------------- Formato de imagenes------------------------------------------------------------- */
@@ -109,7 +105,6 @@ a:hover {
   justify-content: space-around;
   flex-flow: wrap;
 }
-
 .img_index img {
   max-width: 350px;
   width: 100%;
@@ -129,12 +124,16 @@ a:hover {
   display: flex;
   flex-flow: wrap;
   justify-content: space-around;
-
 }
-
 .img_index2 div img {
   width: 200px;
   height: 200px;
+}
+.img_index2 div p {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-flow: wrap;
 }
 
 /* -------------------------------------------------Formato imagenes dentro de pag de venta --------------------------------------------------*/
@@ -149,14 +148,6 @@ a:hover {
   padding: 20px;
 }
 
-/*-----------------------------------------------------Formato de texto debajo de imagenes ---------------------------------------------------*/
-.img_index2 div p {
-  width: 200px;
-  height: 80px;
-  display: flex;
-  flex-flow: wrap;
-}
-
 /* ------------------------------------------------------------Formato videos---------------------------------------------------------------- */
 .videos {
   flex-flow: wrap;
@@ -165,17 +156,17 @@ a:hover {
   list-style: none;
   margin-bottom: 60px;
 }
+.videos ul {
+  max-width: 500px;
+  width: 100%;
+  margin: 50px;
+}
 
 .video_individual {
   max-width: 300px;
   width: 100%;
 }
 
-.videos ul {
-  max-width: 500px;
-  width: 100%;
-  margin: 50px;
-}
 /* -------------------------------------------------------Formato de checkbox ----------------------------------------------------------------*/
 .pag_rango_checkbox {
   display: flex;
@@ -201,21 +192,17 @@ footer {
   display: flex;
   justify-content: flex-end;
 }
-
-.list_footer {
+footer a {
+  color: #ffffff;
+}
+footer a:hover {
+  color: #e4e4e4;
+}
+footer .list_footer {
   list-style: none;
   display: flex;
   margin-top: 1%;
   margin-right: 1%;
-
-}
-
-footer a:hover {
-  color: #e4e4e4
-}
-
-footer a {
-  color: #ffffff;
 }
 
 /* ------------------------------------------------------------Formato mapas ----------------------------------------------------------------*/
@@ -224,8 +211,6 @@ footer a {
   width: 310px;
   height: 230px;
 }
-
-/*----------------------------------------------------------- Formato iframe mapas -----------------------------------------------------------*/
 .mapa iframe {
   width: 100%;
   height: 100%;
@@ -260,22 +245,19 @@ footer a {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-
 .btn_contacto:hover {
   background-color: #04434d;
-  color: #ffffff
+  color: #ffffff;
 }
 
 /*----------------------------------------------------------- Formato rango de precio----------------------------------------------------------*/
 /* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 .wrapper {
   width: 300px;
   background-color: rgb(250, 241, 206);
   border-radius: 10px;
   padding: 20px 25px 40px;
-  box-shadow: 0 12px 35px #04434d31;
+  box-shadow: 0 12px 35px rgba(4, 67, 77, 0.1921568627);
   height: 400px;
 }
 
@@ -285,7 +267,6 @@ footer a {
   margin: 30px 0 35px;
   flex-flow: wrap;
 }
-
 .price-input .field {
   display: flex;
   width: 100%;
@@ -293,8 +274,7 @@ footer a {
   align-items: center;
   flex-flow: wrap;
 }
-
-.field input {
+.price-input .field input {
   width: 100%;
   height: 100%;
   outline: none;
@@ -303,16 +283,9 @@ footer a {
   border-radius: 5px;
   text-align: center;
   border: 1px solid #999;
-  -moz-appearance: textfield;
   display: flex;
   flex-flow: wrap;
 }
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
 .price-input .separator {
   width: 130px;
   display: flex;
@@ -321,15 +294,13 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
   flex-flow: wrap;
 }
-
-.slider {
+.price-input .slider {
   height: 5px;
   position: relative;
   background: #ddd;
   border-radius: 5px;
 }
-
-.slider .progress {
+.price-input .slider .progress {
   height: 100%;
   left: 5%;
   right: 0%;
@@ -338,10 +309,14 @@ input[type="number"]::-webkit-inner-spin-button {
   background: #f48845;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .range-input {
   position: relative;
 }
-
 .range-input input {
   position: absolute;
   width: 100%;
@@ -349,26 +324,22 @@ input[type="number"]::-webkit-inner-spin-button {
   top: -5px;
   background: none;
   pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  background: #f48845;
   pointer-events: auto;
   -webkit-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
-input[type="range"]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb {
   height: 17px;
   width: 17px;
   border: none;
   border-radius: 50%;
-  background: #17A2B8;
   pointer-events: auto;
   -moz-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -406,7 +377,6 @@ span {
 }
 
 /*------------------------------------------------Formato de distribución página puntos de venta-------------------------------------------- */
-
 .puntos_venta {
   display: flex;
   flex-flow: wrap;
@@ -420,39 +390,35 @@ span {
     font-size: 12px;
   }
 }
-
 /*Ajuste en tamaño de letra de h1*/
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 16px;
   }
 }
-
 /*Ajuste en tamaño de letra de los p en header*/
 @media screen and (max-width: 480px) {
   header p {
     font-size: 16px;
   }
 }
-
 /*Ajuste en tamaño de letra de links */
 @media only screen and (max-width: 480px) {
   a {
     font-size: 12px;
   }
 }
-
-
 /*Ajuste en tamaño de letra de h2 de header*/
 @media screen and (max-width: 480px) {
   header h2 {
     font-size: 14px;
   }
 }
-
 /*Eliminar selector de tipo de producto y rango de precio*/
 @media screen and (max-width: 480px) {
   .pag_rango_checkbox {
     display: none !important;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
