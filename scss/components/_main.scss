@@ -1,0 +1,465 @@
+/* -----------------------------------------------------------Importación variables----------------------------------------------------------- */
+@import"../base/variables";
+@import "../base/maps";
+/*--------------------------------------------------------- Formato global------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*-------------------------------------------------------------Formato main -------------------------------------------------------------------*/
+main {
+    margin-bottom: 5%;
+}
+
+/*------------------------------------------------------- Formato títulos y subtitulos ------------------------------------------------------*/
+h2 {
+    margin: 20px;
+    color: $color_tituloysubt;
+    font-size: 22px;
+}
+
+
+/* --------------------------------------------------------------Formato h3 -------------------------------------------------------------------*/
+.h3 {
+    font-size: 18px;
+    color: $color_texto_gral;
+    margin: 15px;
+    font-family: sans-serif;
+}
+
+/*-------------------------------------------------------------- Formato links ---------------------------------------------------------------*/
+a {
+    text-decoration: none;
+    margin: 5px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $color_blanco;
+
+    &:hover {
+        opacity: 0.75;
+        color: $color_hover_gral;
+        text-decoration: none;
+    }
+}
+
+/* ---------------------------------------------------------- Formato de botones ------------------------------------------------------------ */
+.btn_buscar {
+    background-color: $color_principal_darker;
+    border: $color_principal_darkest;
+
+    &:hover {
+        background-color: $color_hover_btn_buscar;
+    }
+}
+
+.btn_filtro {
+    padding: 10px 20px;
+    background-color: $color_naraja;
+    color: $color_blanco;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.pag_img_btn_orden {
+    display: flex;
+    flex-flow: wrap;
+    width: 950px
+}
+
+/* --------------------------------------------------------- Formato de imagenes------------------------------------------------------------- */
+.img_index {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+    img {
+        max-width: 350px;
+        width: 100%;
+    }
+}
+
+.img {
+    margin: 15px;
+}
+
+.img-fluid {
+    max-width: 280px;
+    width: 100%;
+}
+
+.img_index2 {
+    margin: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+
+    div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    div p {
+        width: 200px;
+        height: 80px;
+        display: flex;
+        flex-flow: wrap;
+    }
+}
+
+/* -------------------------------------------------Formato imagenes dentro de pag de venta --------------------------------------------------*/
+.piezas_div {
+    display: flex;
+    flex-flow: wrap;
+    margin: 15px;
+}
+
+/*----------------------------------------------------Formato de col pagina sobre nosotros------------------------------------------------ */
+.col {
+    margin: 10px;
+
+    img {
+        padding: 10px;
+    }
+}
+
+/* ------------------------------------------------------------Formato videos---------------------------------------------------------------- */
+.videos {
+    flex-flow: wrap;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-bottom: 60px;
+
+    ul {
+        max-width: 500px;
+        width: 100%;
+        margin: 50px;
+    }
+}
+
+.video_individual {
+    max-width: 300px;
+    width: 100%;
+}
+
+/* -------------------------------------------------------Formato de checkbox ----------------------------------------------------------------*/
+.pag_rango_checkbox {
+    display: flex;
+    flex-flow: wrap;
+    width: 500px;
+    margin: 15px;
+}
+
+.caja {
+    background-color: $color_celeste;
+    width: 180px;
+    height: 220px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+/* ------------------------------------------------------------Formato mapas ----------------------------------------------------------------*/
+.mapa {
+    border: 5px solid $color_naraja;
+    width: 310px;
+    height: 230px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*--------------------------------------------------- Formato de elementos del formulario contacto------------------------------------------- */
+.form-control {
+    background-color: $color_amarillo_lighter;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form_contacto {
+    width: 800px;
+    padding: 15px;
+}
+
+.form_contacto_img {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+/* ---------------------------------------------------Formato botón enviar de formulario contacto--------------------------------------------*/
+.btn_contacto {
+    color: $color_blanco;
+    background-color: $color_btn_contacto;
+    border: $color_hoveryborde_btn_contacto;
+    margin-left: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    &:hover {
+        background-color: $color_hoveryborde_btn_contacto;
+        color: $color_blanco
+    }
+}
+
+/*----------------------------------------------------------- Formato rango de precio----------------------------------------------------------*/
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.wrapper {
+    width: 300px;
+    background-color: $color_amarillo;
+    border-radius: 10px;
+    padding: 20px 25px 40px;
+    box-shadow: 0 12px 35px $color_sombra;
+    height: 400px;
+}
+
+.price-input {
+    width: 100%;
+    display: flex;
+    margin: 30px 0 35px;
+    flex-flow: wrap;
+
+    .field {
+        display: flex;
+        width: 100%;
+        height: 45px;
+        align-items: center;
+        flex-flow: wrap;
+
+        input {
+            width: 100%;
+            height: 100%;
+            outline: none;
+            font-size: 14px;
+            margin-left: 12px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid $color_sombra;
+            display: flex;
+            flex-flow: wrap;
+        }
+    }
+
+    .separator {
+        width: 130px;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+
+    .slider {
+        height: 5px;
+        position: relative;
+        background: $color_blanco;
+        border-radius: 5px;
+
+        .progress {
+            height: 100%;
+            left: 5%;
+            right: 0%;
+            position: absolute;
+            border-radius: 5px;        }
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.range-input {
+    position: relative;
+
+    input {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -5px;
+        background: none;
+        pointer-events: none;
+    }
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px $color_sombra;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px $color_sombra;
+}
+
+
+/* ----------------------------------------------------------------Formato Grilla------------------------------------------------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 10px;
+    border: solid $color_celeste_darker;
+
+.grid_header {
+    background-color: $color_celeste_darker;
+    color: $color_blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_item {
+    background-color: $color_celeste;
+    color: $color_texto_gral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}}
+
+/*-------------------------------------------------------------------Formato span----------------------------------------------------------- */
+span {
+    font-size: 14px;
+}
+
+/*------------------------------------------------Formato de distribución página puntos de venta-------------------------------------------- */
+
+.puntos_venta {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+/*------------------------------------------------------------Responsive Media query---------------------------------------------------------*/
+/*----------------------------------------------------------Responsive para celulares----------------------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+
+    /*Aumento de margin en main*/
+    main {
+        margin-bottom: 15%;
+    }
+
+    /*Ajuste en tamaño de letra*/
+    * {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
+
+    /*Desaparición de checkbox y slider de precio*/
+    .pag_rango_checkbox {
+        display: none !important;
+    }
+
+    /*Desaparición de imagenes en pág "sobre nosotros" y "puntos de venta" y desaparición de algunos videos en "talleres"*/
+    .priority-1 {
+        display: none;
+    }
+
+    .priority-2 {
+        display: none;
+    }
+
+    .priority-3 {
+        display: none;
+    }
+
+    /*Ajuste de alineación y margen en página "puntos de venta"*/
+    .puntos_venta {
+        margin: 15px;
+        justify-content: space-between;
+    }
+
+    /*Ajuste de centrado de  video que se mantiene en "talleres"*/
+    .videos {
+        justify-content: center;
+    }
+}
+
+/*----------------------------------------------------------Responsive para tablets----------------------------------------------------------*/
+
+@media screen and (min-width: 501px) and (max-width: 960px) {
+
+    /*Ajuste en tamaño de letra*/
+    * {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+
+    /*Ajuste de centrado de  video que se mantiene en "talleres"*/
+    .videos {
+        justify-content: center;
+    }
+
+    /*Ajuste de alineación y margen en página "puntos de venta"*/
+    .puntos_venta {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /*Desaparición de checkbox y slider de precio*/
+    .pag_rango_checkbox {
+        display: none !important;
+    }
+
+    /*Desaparición de imagen en pág "sobre nosotros" y "puntos de venta" y desaparición de algunos videos en "talleres"*/
+    .priority-1 {
+        display: none;
+    }
+}
+
