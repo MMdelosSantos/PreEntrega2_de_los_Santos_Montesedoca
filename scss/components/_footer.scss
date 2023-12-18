@@ -1,9 +1,10 @@
-/* -----------------------------------------------------------Importación variables----------------------------------------------------------- */
+/* -----------------------------------------------------------Importación variables y maps------------------------------------------------- */
 @import"../base/variables";
 @import "../base/maps";
+
 /* -----------------------------------------------------------Formato footer----------------------------------------------------------------- */
 footer {
-    background-color: $color_principal;
+    background: linear-gradient(360deg, $color_principal_darker 0%, $color_principal 100%);
     bottom: 0;
     position: fixed;
     width: 100%;
@@ -14,7 +15,7 @@ footer {
         color: $color_blanco;
 
         &:hover {
-            color: $color_hover_gral
+            color: $color_hover_gral;
         }
     }
 

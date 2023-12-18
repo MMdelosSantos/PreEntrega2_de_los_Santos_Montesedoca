@@ -1,0 +1,108 @@
+/*------------------------------------------------------------Responsive Media query---------------------------------------------------------*/
+/*----------------------------------------------------------Responsive para celulares----------------------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+
+    /*Aumento de margin en main*/
+    main {
+        margin-bottom: 15%;
+    }
+
+    /*Ajuste en tamaño de letra*/
+    * {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
+
+    /*Desaparición de checkbox y slider de precio*/
+    .pag_rango_checkbox {
+        display: none !important;
+    }
+
+    /*Desaparición de imagenes en pág "sobre nosotros" y "puntos de venta" y desaparición de algunos videos en "talleres"*/
+    .priority-1 {
+        display: none;
+    }
+
+    .priority-2 {
+        display: none;
+    }
+
+    .priority-3 {
+        display: none;
+    }
+
+    /*Ajuste de alineación y margen en página "puntos de venta"*/
+    .puntos_venta {
+        margin: 15px;
+        justify-content: space-between;
+    }
+
+    /*Ajuste de centrado de  video que se mantiene en "talleres"*/
+    .videos {
+        justify-content: center;
+    }
+}
+
+/*----------------------------------------------------------Responsive para tablets----------------------------------------------------------*/
+
+@media screen and (min-width: 501px) and (max-width: 960px) {
+
+    /*Ajuste en tamaño de letra*/
+    * {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+
+    /*Ajuste de centrado de  video que se mantiene en "talleres"*/
+    .videos {
+        justify-content: center;
+    }
+
+    /*Ajuste de alineación y margen en página "puntos de venta"*/
+    .puntos_venta {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /*Desaparición de checkbox y slider de precio*/
+    .pag_rango_checkbox {
+        display: none !important;
+    }
+
+    /*Desaparición de imagen en pág "sobre nosotros" y "puntos de venta" y desaparición de algunos videos en "talleres"*/
+    .priority-1 {
+        display: none;
+    }
+}
